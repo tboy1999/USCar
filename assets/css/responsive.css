@@ -142,12 +142,14 @@
   html {font-size: 8px;}
   .product__content {
     flex-basis: 100%;
+    padding-left: 0;
   }
   .product__sidebar {
     flex-basis: 100%;
   }
   .product__container {
     flex-wrap: wrap;
+    gap: 20px 0
   }
   .product-type__list {
     flex-direction: row;
@@ -164,6 +166,13 @@
   
   .detail__img-primary {
     height: 362px
+  }
+  .logo {
+    width: 76px;
+  }
+  .logo::after {
+    width: 20px;
+    height: 20px;
   }
 }
 
