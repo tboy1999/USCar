@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-primary: #4200FF ;
+  --background-secondary: #F5F5F5;
+  --primary-color: #4200FF;
+  --text-color: rgba(0, 0, 0, 0.6);
+  --heading-secondary: rgba(0, 0, 0, 0.9)
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.facenter {
+  display: flex;
+  align-items: center;
+}
+
+.facb {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.fz41 {
+  font-size: 4.1rem;
+  line-height: calc(53/41);
+}
+.fz36 {
+  font-size: 3.6rem;
+  line-height: calc(47/36);
+}
+.fz32 {
+  font-size: 3.2rem;
+  line-height: calc(42/32);
+}
+.fz28 {
+  font-size: 2.8rem;
+  line-height: calc(36/28);
+}
+.fz24 {
+  font-size: 2.4rem;
+  line-height: calc(31/24);
+}
+.fz22 {
+  font-size: 2.2rem;
+  line-height: calc(29 / 22);
+}
+.fz20 {
+  font-size: 2rem;
+  line-height: calc(23/20);
+}
+.fz18 {
+  font-size: 1.8rem;
+  line-height: calc(23 / 18);
+}
+.fz16 {
+  font-size: 1.6rem;
+  line-height: calc(21 / 16);
+}
+.fz17 {
+  font-size: 1.7rem;
+  line-height: calc(22 / 17);
+}
+.fz14 {
+  font-size: 1.4rem;
+  line-height: calc(18/14);
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw700 {
+  font-weight: 700;
+}
+.text-color {
+  color: var(--text-color)
+}
+.heading-secondary {
+  color: var(--heading-secondary)
+}
+.background-primary {
+  background-color: var(--background-primary)
+}
+.background-secondary {
+  background-color: var(--background-secondary)
+}
+.primary-color {
+  color: var(--primary-color)
+}
+
+.disable {
+  background: #919EAB;
+}
+
+.mobile--active {
+  display: none
+}

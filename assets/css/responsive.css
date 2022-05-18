@@ -1,0 +1,234 @@
+@media screen and (max-width: 1359.98px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+
+@media screen and (max-width: 1279.98px) {
+  html {font-size: 9px;}
+  .product-type__list {
+    flex-direction: column;
+  }
+  .header__phone {
+    display: none
+  }
+  .banner__container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 20px 0
+  }
+  .banner__image {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner__image::after {
+    left: unset;
+    bottom: 40px
+  }
+  .banner-second__info {
+    flex-basis: 40%;
+  }
+  .banner-second__img {
+    flex-basis: 60%;
+  }
+}
+
+@media screen and (max-width: 1023.98px) {
+  html {font-size: 8.5px;}
+  .no-mobile {
+    display: none;
+  }
+  .mobile--active {
+    display: block
+  }
+  .header__container {
+    justify-content: space-between
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #fff;
+    width: 60%;
+    padding: 120px 10px;
+    justify-content: center;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.2s linear
+  }
+  .header__menu--active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .sub-menu {
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+  .header__list {
+    flex-direction: column;
+  }
+  .header__user {
+    margin: 0;
+  }
+  .header__cart {
+    margin: 0;
+  }
+  .header__heart {
+    margin: 0;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+  }
+  .header__icon-menu {
+    width: 40px
+  }
+  .banner-second__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner__image img {
+    width: 100%
+  }
+  .banner__image::after {
+    width: 80%
+  }
+  .banner-second__info {
+    padding-left: 0;
+  }
+  .banner-second__img {
+    width: 100%;
+  }
+  .banner-second__container {
+    gap: 40px 0
+  }
+  .footer__container {
+    flex-wrap: wrap;
+    gap: 40px 0
+  }
+  .footer__logo {
+    flex-basis: 100%;
+  }
+  .footer__information, .footer__contact {
+    flex-basis: 33%
+  }
+
+  .detail__container {
+    flex-wrap: wrap;
+    gap: 40px 0
+  }
+  .detail__img{
+    flex-basis: 100%;
+  }
+  .detail__img-primary img {
+    width: 50%;
+    height: unset
+  }
+  .detail__info {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  html {font-size: 8px;}
+  .product__content {
+    flex-basis: 100%;
+  }
+  .product__sidebar {
+    flex-basis: 100%;
+  }
+  .product__container {
+    flex-wrap: wrap;
+  }
+  .product-type__list {
+    flex-direction: row;
+  }
+  .footer__information, .footer__contact {
+    flex-basis: 100%
+  }
+  .footer__social {
+    text-align: left;
+  }
+  .footer__icon {
+    justify-content: flex-start;
+  }
+  
+  .detail__img-primary {
+    height: 362px
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  html {font-size: 7.5px;}
+  .detail__img-second {
+    gap: 20px 0
+  }
+  .parameter__list {
+    flex-direction: column;
+    gap: 20px;
+    align-items: unset
+  }
+  .parameter__list::after {
+    display: none
+  }
+  .parameter__container {
+    flex-basis: 29%;
+  }
+  .parameter__detail  {
+    flex-basis: 69%;
+    margin-top: 0;
+    gap: 10px 0
+  }
+  .parameter__detail p {
+    line-height: calc(23/20);
+  }
+  .wrap-mobile {
+    display: flex;
+    gap: 2%
+  }
+  .parameter {
+    margin-bottom: 40px;
+  }
+  .product-new {
+    margin: 40px 0;
+  }
+  .brand {
+    margin-bottom: 40px;
+  }
+  .header__icon-menu {
+    width: 30px
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__item {
+    position: relative;
+  }
+  .header__item::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 0;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+    background: var(--primary-color);
+    border-radius: 4px;
+    z-index: 2;
+    transition: all 0.3s linear;
+  }
+  .header__item:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}

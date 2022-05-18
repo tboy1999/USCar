@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USCar</title>
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container facenter">
+        <div class="logo fz28 fw700">
+          <a href="index.html"><span class="fz36">UZ</span><span>Car</span></a>
+        </div>
+        <div class="header__menu">
+          <ul class="header__list fz22 fw500 facenter">
+            <li class="header__item"><a href="">Mahsulotlar</a></li>
+            <li class="header__item"><a href="">Chegirmalar</a></li>
+            <li class="header__item"><a href="">Yetkazib berish</a></li>
+            <li class="header__item fz18 fw500 mobile--active">+998 (99) 121 23 08</li>
+          </ul>
+          <div class="sub-menu facenter">
+            <div class="header__user flex-center background-secondary mobile--active">
+              <a href="">
+                <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21H14V19C14 18.2044 13.6839 17.4413 13.1213 16.8787C12.5587 16.3161 11.7956 16 11 16H5C4.20435 16 3.44129 16.3161 2.87868 16.8787C2.31607 17.4413 2 18.2044 2 19V21H0V19C0 17.6739 0.526784 16.4021 1.46447 15.4645C2.40215 14.5268 3.67392 14 5 14H11C12.3261 14 13.5979 14.5268 14.5355 15.4645C15.4732 16.4021 16 17.6739 16 19V21ZM8 12C7.21207 12 6.43185 11.8448 5.7039 11.5433C4.97595 11.2417 4.31451 10.7998 3.75736 10.2426C3.20021 9.68549 2.75825 9.02405 2.45672 8.2961C2.15519 7.56815 2 6.78793 2 6C2 5.21207 2.15519 4.43185 2.45672 3.7039C2.75825 2.97595 3.20021 2.31451 3.75736 1.75736C4.31451 1.20021 4.97595 0.758251 5.7039 0.456723C6.43185 0.155195 7.21207 -1.17411e-08 8 0C9.5913 2.37122e-08 11.1174 0.632141 12.2426 1.75736C13.3679 2.88258 14 4.4087 14 6C14 7.5913 13.3679 9.11742 12.2426 10.2426C11.1174 11.3679 9.5913 12 8 12ZM8 10C9.06087 10 10.0783 9.57857 10.8284 8.82843C11.5786 8.07828 12 7.06087 12 6C12 4.93913 11.5786 3.92172 10.8284 3.17157C10.0783 2.42143 9.06087 2 8 2C6.93913 2 5.92172 2.42143 5.17157 3.17157C4.42143 3.92172 4 4.93913 4 6C4 7.06087 4.42143 8.07828 5.17157 8.82843C5.92172 9.57857 6.93913 10 8 10Z" fill="#595959"/>
+                  </svg>              
+              </a>
+            </div>
+            <div class="header__heart flex-center background-secondary mobile--active">
+              <a href="">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.001 1.52898C12.35 -0.58002 15.98 -0.51002 18.243 1.75698C20.505 4.02498 20.583 7.63698 18.479 9.99298L9.99901 18.485L1.52101 9.99298C-0.582994 7.63698 -0.503994 4.01898 1.75701 1.75698C4.02201 -0.50702 7.64501 -0.58302 10.001 1.52898ZM16.827 3.16998C15.327 1.66798 12.907 1.60698 11.337 3.01698L10.002 4.21498L8.66601 3.01798C7.09101 1.60598 4.67601 1.66798 3.17201 3.17198C1.68201 4.66198 1.60701 7.04698 2.98001 8.62298L10 15.654L17.02 8.62398C18.394 7.04698 18.319 4.66498 16.827 3.16998Z" fill="#595959"/>
+                </svg>
+              </a>
+            </div>
+            <div class="header__cart flex-center background-secondary mobile--active">
+              <a href="">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.00008 5.41396L0.75708 2.17196L2.17208 0.756958L5.41408 3.99996H20.6561C20.8119 3.99995 20.9657 4.03637 21.1049 4.10633C21.2442 4.17628 21.3652 4.27782 21.4583 4.40285C21.5514 4.52789 21.6139 4.67294 21.641 4.82644C21.668 4.97995 21.6588 5.13765 21.6141 5.28696L19.2141 13.287C19.1523 13.493 19.0258 13.6737 18.8532 13.8022C18.6806 13.9306 18.4712 14 18.2561 14H6.00008V16H17.0001V18H5.00008C4.73486 18 4.48051 17.8946 4.29297 17.7071C4.10544 17.5195 4.00008 17.2652 4.00008 17V5.41396ZM6.00008 5.99996V12H17.5121L19.3121 5.99996H6.00008ZM5.50008 22C5.10226 22 4.72072 21.8419 4.43942 21.5606C4.15812 21.2793 4.00008 20.8978 4.00008 20.5C4.00008 20.1021 4.15812 19.7206 4.43942 19.4393C4.72072 19.158 5.10226 19 5.50008 19C5.8979 19 6.27944 19.158 6.56074 19.4393C6.84204 19.7206 7.00008 20.1021 7.00008 20.5C7.00008 20.8978 6.84204 21.2793 6.56074 21.5606C6.27944 21.8419 5.8979 22 5.50008 22ZM17.5001 22C17.1023 22 16.7207 21.8419 16.4394 21.5606C16.1581 21.2793 16.0001 20.8978 16.0001 20.5C16.0001 20.1021 16.1581 19.7206 16.4394 19.4393C16.7207 19.158 17.1023 19 17.5001 19C17.8979 19 18.2794 19.158 18.5607 19.4393C18.842 19.7206 19.0001 20.1021 19.0001 20.5C19.0001 20.8978 18.842 21.2793 18.5607 21.5606C18.2794 21.8419 17.8979 22 17.5001 22Z" fill="#595959"/>
+                </svg>              
+              </a>
+            </div>
+          </div>
+          <span class="close flex-center">&times;</span>
+        </div>
+        <div class="header__phone fz18 fw500 no-mobile">+998 (99) 121 23 08</div>
+        <div class="header__user flex-center background-secondary no-mobile" >
+          <a href="">
+            <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 21H14V19C14 18.2044 13.6839 17.4413 13.1213 16.8787C12.5587 16.3161 11.7956 16 11 16H5C4.20435 16 3.44129 16.3161 2.87868 16.8787C2.31607 17.4413 2 18.2044 2 19V21H0V19C0 17.6739 0.526784 16.4021 1.46447 15.4645C2.40215 14.5268 3.67392 14 5 14H11C12.3261 14 13.5979 14.5268 14.5355 15.4645C15.4732 16.4021 16 17.6739 16 19V21ZM8 12C7.21207 12 6.43185 11.8448 5.7039 11.5433C4.97595 11.2417 4.31451 10.7998 3.75736 10.2426C3.20021 9.68549 2.75825 9.02405 2.45672 8.2961C2.15519 7.56815 2 6.78793 2 6C2 5.21207 2.15519 4.43185 2.45672 3.7039C2.75825 2.97595 3.20021 2.31451 3.75736 1.75736C4.31451 1.20021 4.97595 0.758251 5.7039 0.456723C6.43185 0.155195 7.21207 -1.17411e-08 8 0C9.5913 2.37122e-08 11.1174 0.632141 12.2426 1.75736C13.3679 2.88258 14 4.4087 14 6C14 7.5913 13.3679 9.11742 12.2426 10.2426C11.1174 11.3679 9.5913 12 8 12ZM8 10C9.06087 10 10.0783 9.57857 10.8284 8.82843C11.5786 8.07828 12 7.06087 12 6C12 4.93913 11.5786 3.92172 10.8284 3.17157C10.0783 2.42143 9.06087 2 8 2C6.93913 2 5.92172 2.42143 5.17157 3.17157C4.42143 3.92172 4 4.93913 4 6C4 7.06087 4.42143 8.07828 5.17157 8.82843C5.92172 9.57857 6.93913 10 8 10Z" fill="#595959"/>
+              </svg>              
+          </a>
+        </div>
+        <div class="header__heart flex-center background-secondary no-mobile">
+          <a href="">
+            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.001 1.52898C12.35 -0.58002 15.98 -0.51002 18.243 1.75698C20.505 4.02498 20.583 7.63698 18.479 9.99298L9.99901 18.485L1.52101 9.99298C-0.582994 7.63698 -0.503994 4.01898 1.75701 1.75698C4.02201 -0.50702 7.64501 -0.58302 10.001 1.52898ZM16.827 3.16998C15.327 1.66798 12.907 1.60698 11.337 3.01698L10.002 4.21498L8.66601 3.01798C7.09101 1.60598 4.67601 1.66798 3.17201 3.17198C1.68201 4.66198 1.60701 7.04698 2.98001 8.62298L10 15.654L17.02 8.62398C18.394 7.04698 18.319 4.66498 16.827 3.16998Z" fill="#595959"/>
+            </svg>
+          </a>
+        </div>
+        <div class="header__cart flex-center background-secondary no-mobile">
+          <a href="">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.00008 5.41396L0.75708 2.17196L2.17208 0.756958L5.41408 3.99996H20.6561C20.8119 3.99995 20.9657 4.03637 21.1049 4.10633C21.2442 4.17628 21.3652 4.27782 21.4583 4.40285C21.5514 4.52789 21.6139 4.67294 21.641 4.82644C21.668 4.97995 21.6588 5.13765 21.6141 5.28696L19.2141 13.287C19.1523 13.493 19.0258 13.6737 18.8532 13.8022C18.6806 13.9306 18.4712 14 18.2561 14H6.00008V16H17.0001V18H5.00008C4.73486 18 4.48051 17.8946 4.29297 17.7071C4.10544 17.5195 4.00008 17.2652 4.00008 17V5.41396ZM6.00008 5.99996V12H17.5121L19.3121 5.99996H6.00008ZM5.50008 22C5.10226 22 4.72072 21.8419 4.43942 21.5606C4.15812 21.2793 4.00008 20.8978 4.00008 20.5C4.00008 20.1021 4.15812 19.7206 4.43942 19.4393C4.72072 19.158 5.10226 19 5.50008 19C5.8979 19 6.27944 19.158 6.56074 19.4393C6.84204 19.7206 7.00008 20.1021 7.00008 20.5C7.00008 20.8978 6.84204 21.2793 6.56074 21.5606C6.27944 21.8419 5.8979 22 5.50008 22ZM17.5001 22C17.1023 22 16.7207 21.8419 16.4394 21.5606C16.1581 21.2793 16.0001 20.8978 16.0001 20.5C16.0001 20.1021 16.1581 19.7206 16.4394 19.4393C16.7207 19.158 17.1023 19 17.5001 19C17.8979 19 18.2794 19.158 18.5607 19.4393C18.842 19.7206 19.0001 20.1021 19.0001 20.5C19.0001 20.8978 18.842 21.2793 18.5607 21.5606C18.2794 21.8419 17.8979 22 17.5001 22Z" fill="#595959"/>
+            </svg>              
+          </a>
+        </div>
+
+        <div class="header__icon-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="banner">
+      <div class="container">
+        <div class="banner__container background-secondary">
+          <div class="banner__info">
+            <h1 class="fz41 fw700">
+              O‘zbekistonda eng yangi mashina shinalari, 30% gacha chegirma.
+            </h1>
+            <p class="header__desc heading-secondary fz28 fw400">
+              O‘zbekiston bo‘ylab yetkazib berish bepul.
+            </p>
+            <form class="banner__form facenter">
+              <input type="text" class="fz18 fw400" placeholder="Mahsulotlar bo‘ylab izlash">
+              <button type="submit" class="background-primary">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.031 14.617L20.314 18.899L18.899 20.314L14.617 16.031C13.0237 17.3082 11.042 18.0029 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0C13.968 0 18 4.032 18 9C18.0029 11.042 17.3082 13.0237 16.031 14.617ZM14.025 13.875C15.2941 12.5699 16.0029 10.8204 16 9C16 5.132 12.867 2 9 2C5.132 2 2 5.132 2 9C2 12.867 5.132 16 9 16C10.8204 16.0029 12.5699 15.2941 13.875 14.025L14.025 13.875Z" fill="white"/>
+                </svg>
+              </button>
+            </form>
+            
+          </div>
+          <div class="banner__image">
+            <img src="./assets/img/banner/banner.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-type">
+      <div class="container">
+        <div class="row">
+          <div class="col xxl-4 xl-4 lg-4 md-4 sm-12 xs-12">
+            <div class="product-type__list facenter">
+              <div class="product-type__img flex-center">
+                <a href=""><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+              </div>
+              <div class="product-type__info">
+                <h3 class="fz18 fw500"><a href="">Avtomobile o‘rindiqlari</a></h3>
+                <p class="fz14 fw500 text-color"><a href="">O‘lchamlar va brendlar bo‘ylab izlang.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-4 xl-4 lg-4 md-4 sm-12 xs-12">
+            <div class="product-type__list facenter">
+              <div class="product-type__img flex-center">
+                <a href=""><img src="./assets/img/product-type/product-type-2.jpg" alt=""></a>
+              </div>
+              <div class="product-type__info">
+                <h3 class="fz18 fw500"><a href="">Avtomobile shinalari</a></h3>
+                <p class="fz14 fw500 text-color"><a href="">O‘lchamlar va brendlar bo‘ylab izlang.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-4 xl-4 lg-4 md-4 sm-12 xs-12">
+            <div class="product-type__list facenter">
+              <div class="product-type__img flex-center">
+                <a href=""><img src="./assets/img/product-type/product-type-3.jpg" alt=""></a>
+              </div>
+              <div class="product-type__info">
+                <h3 class="fz18 fw500"><a href="">Avtomobile rullari</a></h3>
+                <p class="fz14 fw500 text-color"><a href="">O‘lchamlar va brendlar bo‘ylab izlang.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="product__container d-flex">
+          <div class="product__sidebar">
+            <div class="sidebar__item facb sidebar__item--active">
+              <div class="sidebar__content facenter">
+                <div class="sidebar__img flex-center ">
+                  <img src="./assets/img/product-sidebar/sidebar-shinalar.svg" alt="">
+                </div>
+                <h3 class="fz22 fw500">Shinalar</h3>
+              </div>
+              <svg width="12" height="18" viewBox="0 0 12 18" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.56265 8.99998L0.962646 2.39998L2.84798 0.514648L11.3333 8.99998L2.84798 17.4853L0.962646 15.6L7.56265 8.99998Z"/>
+              </svg>
+            </div>
+            <div class="sidebar__item facb">
+              <div class="sidebar__content facenter">
+                <div class="sidebar__img flex-center ">
+                  <img src="./assets/img/product-sidebar/sidebar-rullar.svg" alt="">
+                </div>
+                <h3 class="fz22 fw500">Rullar</h3>
+              </div>
+              <svg width="12" height="18" viewBox="0 0 12 18" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.56265 8.99998L0.962646 2.39998L2.84798 0.514648L11.3333 8.99998L2.84798 17.4853L0.962646 15.6L7.56265 8.99998Z"/>
+              </svg>
+            </div>
+            <div class="sidebar__item facb">
+              <div class="sidebar__content facenter">
+                <div class="sidebar__img flex-center ">
+                  <img src="./assets/img/product-sidebar/sidebar-chair.svg" alt="">
+                </div>
+                <h3 class="fz22 fw500">O‘rindiqlar</h3>
+              </div>
+              <svg width="12" height="18" viewBox="0 0 12 18" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.56265 8.99998L0.962646 2.39998L2.84798 0.514648L11.3333 8.99998L2.84798 17.4853L0.962646 15.6L7.56265 8.99998Z"/>
+              </svg>
+            </div>
+            <div class="sidebar__item facb">
+              <div class="sidebar__content facenter">
+                <div class="sidebar__img flex-center ">
+                  <img src="./assets/img/product-sidebar/sidebar-battery.svg" alt="">
+                </div>
+                <h3 class="fz22 fw500">Akkumlyatorlar</h3>
+              </div>
+              <svg width="12" height="18" viewBox="0 0 12 18" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.56265 8.99998L0.962646 2.39998L2.84798 0.514648L11.3333 8.99998L2.84798 17.4853L0.962646 15.6L7.56265 8.99998Z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="product__content product__content--active">
+            <div class="content row">
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/wheel.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial</a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/wheel.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial</a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/wheel.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial</a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/wheel.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial</a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/wheel.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial</a></h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/wheel.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial</a></h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__content">
+            <div class="content row">
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/rullar.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/rullar.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/rullar.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/rullar.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/rullar.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/rullar.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__content">
+            <div class="content row">
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/product-type/product-type-1.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__content">
+            <div class="content row">
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/battery.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/battery.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/battery.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/battery.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/battery.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col xxl-4 xl-4 lg-6 md-6 sm-6 xs-12">
+                <div class="content__item">
+                  <div class="content__img flex-center">
+                    <a href="./assets/views/product.html"><img src="./assets/img/content/battery.jpg" alt=""></a>
+                  </div>
+                  <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+                  </h4>
+                  <div class="content__price-and-rate facb">
+                    <div class="content__rate">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                      </svg>                          
+                    </div>
+                    <p class="fz20 fw500 primary-color">$86.00</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <ul class="product__pagination fz14 fw700 facenter">
+          <li><a href=""  class="flex-center disable">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.5">
+              <path d="M0 4C0 1.79086 1.79086 0 4 0H28C30.2091 0 32 1.79086 32 4V28C32 30.2091 30.2091 32 28 32H4C1.79086 32 0 30.2091 0 28V4Z" fill="#919EAB"/>
+              <path d="M20.1599 11.41L15.5799 16L20.1599 20.59L18.7499 22L12.7499 16L18.7499 10L20.1599 11.41Z" fill="#C4CDD5"/>
+              </g>
+            </svg>              
+          </a></li>
+          <li><a href=""  class="flex-center product__pagination--active">1</a></li>
+          <li><a href=""  class="flex-center">2</a></li>
+          <li><a href=""  class="flex-center">...</a></li>
+          <li><a href=""  class="flex-center">9</a></li>
+          <li><a href=""  class="flex-center">10</a></li>
+          <li><a href=""  class="flex-center">
+            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.840088 1.41L5.42009 6L0.840088 10.59L2.25009 12L8.25009 6L2.25009 0L0.840088 1.41Z" fill="#C4CDD5"/>
+            </svg>              
+          </a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="product-type">
+      <div class="container">
+        <div class="row">
+          <div class="col xxl-4 xl-4 lg-4 md-4 sm-12 xs-12">
+            <div class="product-type__list facenter">
+              <div class="product-type__img flex-center">
+                <a href=""><img src="./assets/img/product-type/car.jpg" alt=""></a>
+              </div>
+              <div class="product-type__info">
+                <h3 class="fz18 fw500"><a href="">Oson yetkazib berish</a></h3>
+                <p class="fz14 fw500 text-color"><a href="">Maxsulotni qo‘lingizga olmaguncha to‘lov qilmang.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-4 xl-4 lg-4 md-4 sm-12 xs-12">
+            <div class="product-type__list facenter">
+              <div class="product-type__img flex-center">
+                <a href=""><img src="./assets/img/product-type/smart-phone.jpg" alt=""></a>
+              </div>
+              <div class="product-type__info">
+                <h3 class="fz18 fw500"><a href="">Ishonchli to‘lov</a></h3>
+                <p class="fz14 fw500 text-color"><a href="">Maxsulotni qo‘lingizga olmaguncha to‘lov qilmang.</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-4 xl-4 lg-4 md-4 sm-12 xs-12">
+            <div class="product-type__list facenter">
+              <div class="product-type__img flex-center">
+                <a href=""><img src="./assets/img/product-type/24.jpg" alt=""></a>
+              </div>
+              <div class="product-type__info">
+                <h3 class="fz18 fw500"><a href="">Tezkor buyurtma berish</a></h3>
+                <p class="fz14 fw500 text-color"><a href="">Maxsulotni qo‘lingizga olmaguncha to‘lov qilmang.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner-second">
+      <div class="container">
+        <div class="banner-second__container facenter">
+          <div class="banner-second__info">
+            <h2 class="fz36 fw70">Avtomabil ehtiyot qismlari, eng ishonchli va sifatli. </h2>
+            <a href=""class="fz28 fw400 facenter">
+              Barchasi
+              <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.56265 9.00001L0.962646 2.40001L2.84798 0.514679L11.3333 9.00001L2.84798 17.4853L0.962646 15.6L7.56265 9.00001Z" fill="black"/>
+                </svg>                
+            </a>
+          </div>
+          <div class="banner-second__img flex-center">
+            <img src="./assets/img/banner-second/Rectangle 317.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-new">
+      <div class="container">
+        <div class="product-new__header facb">
+          <h3 class="fz32 fw500">Eng songi Mahsulotlar</h3>
+          <a href="" class="fz28 fw400 heading-secondary facenter">
+            Barchasi
+            <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.56265 8.99998L0.962646 2.39998L2.84798 0.514648L11.3333 8.99998L2.84798 17.4853L0.962646 15.6L7.56265 8.99998Z" fill="black" fill-opacity="0.9"/>
+            </svg>  
+          </a>
+        </div>
+        <div class="row">
+          <div class="col xxl-3 xl-3 lg-4 md-6 sm-6 xs-12">
+            <div class="content__item">
+              <div class="content__img flex-center">
+                <a href="./assets/views/product.html"><img src="./assets/img/product-new/product-new-1.jpg" alt=""></a>
+              </div>
+              <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+              </h4>
+              <div class="content__price-and-rate facb">
+                <div class="content__rate">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                </div>
+                <p class="fz20 fw500 primary-color">$86.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-3 xl-3 lg-4 md-6 sm-6 xs-12">
+            <div class="content__item">
+              <div class="content__img flex-center">
+                <a href="./assets/views/product.html"><img src="./assets/img/product-new/product-new-2.jpg" alt=""></a>
+              </div>
+              <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+              </h4>
+              <div class="content__price-and-rate facb">
+                <div class="content__rate">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                </div>
+                <p class="fz20 fw500 primary-color">$86.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-3 xl-3 lg-4 md-6 sm-6 xs-12">
+            <div class="content__item">
+              <div class="content__img flex-center">
+                <a href="./assets/views/product.html"><img src="./assets/img/product-new/product-new-3.jpg" alt=""></a>
+              </div>
+              <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+              </h4>
+              <div class="content__price-and-rate facb">
+                <div class="content__rate">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                </div>
+                <p class="fz20 fw500 primary-color">$86.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col xxl-3 xl-3 lg-4 md-6 sm-6 xs-12">
+            <div class="content__item">
+              <div class="content__img flex-center">
+                <a href="./assets/views/product.html"><img src="./assets/img/product-new/product-new-4.jpg" alt=""></a>
+              </div>
+              <h4 class="fz17 fw500"><a href="./assets/views/product.html">Hankook Kinergy ST H735 all Season Radial  </a>
+              </h4>
+              <div class="content__price-and-rate facb">
+                <div class="content__rate">
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                  <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51998L0.391357 5.86131L5.74269 5.22665L8.00002 0.333313L10.2574 5.22665L15.6087 5.86131L11.652 9.51998L12.702 14.8053L8.00002 12.1733Z" fill="#FED712"/>
+                  </svg>                          
+                </div>
+                <p class="fz20 fw500 primary-color">$86.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brand">
+      <div class="container">
+        <h3 class="fz32 fw500">Brendlar</h3>
+        <div class="row">
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/audi.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Audi</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Mercedes.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Mercedes</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Daewoo.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Daewoo</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Hyundai.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Hyundai</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Tesla.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Tesla</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Toyota.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Toyota</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Ford.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Ford</a></h4>
+          </div>
+          <div class="brand__item flex-center col xxl-3 xl-3 lg-4 md-4 sm-6 xs-6">
+            <div class="brand__logo flex-center">
+              <a href=""><img src="./assets/img/brand/Chevrolet.jpg" alt=""></a>
+            </div>
+            <h4 class="fz32 fw700"><a href="">Chevrolet</a></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container d-flex">
+        <div class="footer__logo">
+          <div class="logo fz28 fw700">
+            <a href="">
+              <span class="fz36">UZ</span><span>Car</span>
+            </a>
+          </div>
+          <p class="fz16 fw500">+998 (99) 121 23 08</p>
+        </div>
+        <div class="footer__information">
+          <h3 class="fz24 fw700">Ma'lumotlar</h3>
+          <ul class="footer__list fz20 fw700">
+            <li class="footer__item"><a href="">Tovar yetkazib berish</a></li>
+            <li class="footer__item"><a href="">Tovarni qaytarish</a></li>
+            <li class="footer__item"><a href="">Biz haqimizda</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h3 class="fz24 fw700">Biz bilan aloqa</h3>
+          <ul class="footer__list fz20 fw700">
+            <li class="footer__item"><a href="">+998 99 121 23 08</a></li>
+            <li class="footer__item"><a href="">info@Car.uz</a></li>
+            <li class="footer__item"><a href="">Qoraqalpog’iston, Beruniy</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h3 class="fz24 fw700">Ijtimoiy tarmoqlarimiz</h3>
+          <div class="footer__icon facenter">
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 27C18.1826 27 21.2348 25.7357 23.4853 23.4853C25.7357 21.2348 27 18.1826 27 15C27 11.8174 25.7357 8.76515 23.4853 6.51472C21.2348 4.26428 18.1826 3 15 3C11.8174 3 8.76515 4.26428 6.51472 6.51472C4.26428 8.76515 3 11.8174 3 15C3 18.1826 4.26428 21.2348 6.51472 23.4853C8.76515 25.7357 11.8174 27 15 27ZM15 30C6.7155 30 0 23.2845 0 15C0 6.7155 6.7155 0 15 0C23.2845 0 30 6.7155 30 15C30 23.2845 23.2845 30 15 30ZM10.335 16.755L6.588 15.5865C5.778 15.339 5.7735 14.781 6.7695 14.3805L21.369 8.7405C22.2165 8.3955 22.6965 8.832 22.422 9.9255L19.9365 21.6555C19.7625 22.491 19.26 22.6905 18.5625 22.305L14.736 19.473L12.9525 21.195C12.7695 21.372 12.621 21.5235 12.339 21.561C12.0585 21.6 11.8275 21.516 11.658 21.051L10.353 16.7445L10.335 16.7565V16.755Z" fill="white"/>
+              </svg>
+            </a>
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 10.5C13.8065 10.5 12.6619 10.9741 11.818 11.818C10.9741 12.6619 10.5 13.8065 10.5 15C10.5 16.1935 10.9741 17.3381 11.818 18.182C12.6619 19.0259 13.8065 19.5 15 19.5C16.1935 19.5 17.3381 19.0259 18.182 18.182C19.0259 17.3381 19.5 16.1935 19.5 15C19.5 13.8065 19.0259 12.6619 18.182 11.818C17.3381 10.9741 16.1935 10.5 15 10.5ZM15 7.5C16.9891 7.5 18.8968 8.29018 20.3033 9.6967C21.7098 11.1032 22.5 13.0109 22.5 15C22.5 16.9891 21.7098 18.8968 20.3033 20.3033C18.8968 21.7098 16.9891 22.5 15 22.5C13.0109 22.5 11.1032 21.7098 9.6967 20.3033C8.29018 18.8968 7.5 16.9891 7.5 15C7.5 13.0109 8.29018 11.1032 9.6967 9.6967C11.1032 8.29018 13.0109 7.5 15 7.5ZM24.75 7.125C24.75 7.62228 24.5525 8.09919 24.2008 8.45082C23.8492 8.80246 23.3723 9 22.875 9C22.3777 9 21.9008 8.80246 21.5492 8.45082C21.1975 8.09919 21 7.62228 21 7.125C21 6.62772 21.1975 6.15081 21.5492 5.79917C21.9008 5.44754 22.3777 5.25 22.875 5.25C23.3723 5.25 23.8492 5.44754 24.2008 5.79917C24.5525 6.15081 24.75 6.62772 24.75 7.125ZM15 3C11.289 3 10.683 3.0105 8.9565 3.087C7.7805 3.1425 6.9915 3.3 6.2595 3.585C5.6085 3.837 5.139 4.1385 4.6395 4.6395C4.17001 5.0931 3.80903 5.64688 3.5835 6.2595C3.2985 6.9945 3.141 7.782 3.087 8.9565C3.009 10.6125 3 11.1915 3 15C3 18.711 3.0105 19.317 3.087 21.0435C3.1425 22.218 3.3 23.0085 3.5835 23.739C3.8385 24.3915 4.1385 24.861 4.6365 25.359C5.142 25.863 5.6115 26.1645 6.2565 26.4135C6.9975 26.7 7.7865 26.859 8.9565 26.913C10.6125 26.991 11.1915 27 15 27C18.711 27 19.317 26.9895 21.0435 26.913C22.2165 26.8575 23.007 26.7 23.739 26.4165C24.3885 26.163 24.861 25.8615 25.359 25.3635C25.8645 24.858 26.166 24.3885 26.415 23.7435C26.7 23.004 26.859 22.2135 26.913 21.0435C26.991 19.3875 27 18.8085 27 15C27 11.289 26.9895 10.683 26.913 8.9565C26.8575 7.7835 26.7 6.9915 26.415 6.2595C26.1889 5.6475 25.8286 5.09394 25.3605 4.6395C24.9071 4.16977 24.3533 3.80875 23.7405 3.5835C23.0055 3.2985 22.2165 3.141 21.0435 3.087C19.3875 3.009 18.8085 3 15 3ZM15 0C19.0755 0 19.584 0.0149999 21.183 0.0899999C22.7805 0.165 23.868 0.4155 24.825 0.7875C25.815 1.1685 26.649 1.6845 27.483 2.517C28.2457 3.26684 28.8359 4.17388 29.2125 5.175C29.583 6.1305 29.835 7.2195 29.91 8.817C29.9805 10.416 30 10.9245 30 15C30 19.0755 29.985 19.584 29.91 21.183C29.835 22.7805 29.583 23.868 29.2125 24.825C28.837 25.8267 28.2467 26.7339 27.483 27.483C26.7329 28.2455 25.826 28.8356 24.825 29.2125C23.8695 29.583 22.7805 29.835 21.183 29.91C19.584 29.9805 19.0755 30 15 30C10.9245 30 10.416 29.985 8.817 29.91C7.2195 29.835 6.132 29.583 5.175 29.2125C4.17349 28.8367 3.26629 28.2464 2.517 27.483C1.75411 26.7333 1.1639 25.8262 0.7875 24.825C0.4155 23.8695 0.165 22.7805 0.0899999 21.183C0.0194999 19.584 0 19.0755 0 15C0 10.9245 0.0149999 10.416 0.0899999 8.817C0.165 7.218 0.4155 6.132 0.7875 5.175C1.16285 4.17327 1.75321 3.26598 2.517 2.517C3.26651 1.75385 4.17364 1.16359 5.175 0.7875C6.132 0.4155 7.218 0.165 8.817 0.0899999C10.416 0.0194999 10.9245 0 15 0Z" fill="white"/>
+              </svg>
+            </a>              
+            <a href="">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5 26.907C19.5259 26.522 22.2917 24.9992 24.2352 22.6482C26.1787 20.2971 27.1541 17.2943 26.9631 14.25C26.7721 11.2056 25.429 8.34823 23.2069 6.25857C20.9848 4.16891 18.0503 3.00378 15 3C11.9459 2.99773 9.00592 4.16001 6.77901 6.25002C4.55209 8.34003 3.20586 11.2005 3.01461 14.2486C2.82337 17.2966 3.8015 20.3029 5.74972 22.6549C7.69793 25.0069 10.4696 26.5275 13.5 26.907V18H10.5V15H13.5V12.519C13.5 10.5135 13.71 9.786 14.1 9.0525C14.4842 8.32678 15.0779 7.73353 15.804 7.35C16.377 7.0425 17.0895 6.858 18.3345 6.7785C18.828 6.747 19.467 6.786 20.2515 6.8985V9.7485H19.5C18.1245 9.7485 17.556 9.813 17.217 9.9945C17.0147 10.0985 16.85 10.2632 16.746 10.4655C16.566 10.8045 16.5 11.1405 16.5 12.5175V15H20.25L19.5 18H16.5V26.907ZM15 30C6.7155 30 0 23.2845 0 15C0 6.7155 6.7155 0 15 0C23.2845 0 30 6.7155 30 15C30 23.2845 23.2845 30 15 30Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
